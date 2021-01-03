@@ -1,0 +1,8 @@
+U
+
+    -&7^ч  г                   @   s8   d dl Zd dlmZ e e eЎЎZdd„ Zdd„ Z	dS )й    N)Ъpathc                 C   s>   t  t tdЎЎ}| Ў }| d| |fЎ | Ў  | Ў  d S )Nъdatabase.dbz-insert into posts (name,content) values (?,?))	ЪsqlЪconnectr   ЪjoinЪROOTЪcursorЪexecuteZcommitЪclose)ЪnameЪcontentЪconЪcur© r   ъ,C:\Users\nikol_000\Desktop\project\models.pyЪcreate_post   s
+    r   c                  C   s0   t  t tdЎЎ} |  Ў }| dЎ | Ў }|S )Nr   zselect * from posts)r   r   r   r   r   r   r	   Zfetchall)r
+   r   Ъpostsr   r   r   Ъ	get_posts   s
+    
+r   )
+Zsqlite3r   Ъosr   ЪdirnameЪrelpathЪ__file__r   r   r   r   r   r   r   Ъ<module>   s   
